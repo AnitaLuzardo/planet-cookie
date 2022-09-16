@@ -1,8 +1,17 @@
 import React from 'react'
+import "../stylesheets/Register.css"
 
 function Register() {
   return (
-    <h1>Bienvenino a Register</h1>
+    <div>
+      <h1 className="register_title">Bienvenino a Register</h1>
+      <form action="">
+        <input type="text" 
+        name="nombre"
+        placeholder="Nombre"
+        />
+      </form>
+    </div>
   )
 }
 

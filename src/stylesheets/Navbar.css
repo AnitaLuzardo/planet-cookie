@@ -20,8 +20,18 @@
   width: 35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   ul {
       margin-top: -8px;
+  }
+
+  .container_button {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+  }
+
+  .button_login {
+    margin-bottom: 10px;
   }
 }

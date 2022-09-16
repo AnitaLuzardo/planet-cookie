@@ -39,7 +39,14 @@ function Navbar() {
               </li>
             ))
           }
-          <Button>Get started</Button>
+          <div className='container_button'>
+            <Button>
+              <Link to= "/login"> Login </Link>
+            </Button>
+            <Button>
+              <Link to= "/register"> Register </Link>
+            </Button>
+          </div> 
         </ul>
       </div>
     </div>

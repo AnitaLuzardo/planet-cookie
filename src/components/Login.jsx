@@ -1,8 +1,9 @@
 import React from 'react'
+import "../stylesheets/Login.css"
 
 function Login() {
   return (
-    <h1>Bienvenido al Login</h1>
+    <h1 className="loginTitle">Bienvenido al Login</h1>
   )
 }
 
