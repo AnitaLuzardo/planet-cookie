@@ -1,11 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
 import "../stylesheets/Register.css"
 
 function Register() {
-  
-  const handleSubmit = e => {
+  const [date, setDate] = useState({ //setDate actualiza el objeto
+    nombre: '',
+    apellido: '',
+    email: '',
+    password: '',
+    confPassword: ''
+  })
 
+  const handleSubmit = e => { //es el que procesa el formulario
+    e.preventDefault()
   }
+
+  const handleChange = (e) => {
+    setDate ({
+      ...date,
+      [e.target.name]: e.target.value
+    });
+  }
+
   return (
     <div className="container_register">
       
@@ -15,26 +31,31 @@ function Register() {
         name="nombre"
         placeholder="Nombre"
         className="input_register"
+        onChange={handleChange} //esta detectando el cambio del input
         />
         <input type="text" 
         name="apellido"
         placeholder="Apellido"
         className="input_register"
+        onChange={handleChange}
         />
         <input type="text" 
         name="email"
         placeholder="Email"
         className="input_register"
+        onChange={handleChange}
         />
         <input type="password" 
         name="password"
         placeholder="Password"
         className="input_register"
+        onChange={handleChange}
         /> 
         <input type="password" 
         name="confPassword"
         placeholder="Confirmar Password"
         className="input_register"
+        onChange={handleChange}
         />
         <button 
           type='submit'
