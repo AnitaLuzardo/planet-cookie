@@ -20,11 +20,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 560px;
+  height: 500px;
+  margin-top: -50px;
 }
 
 .container_form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.content_form_register {
+  margin-top: 50px;
 }

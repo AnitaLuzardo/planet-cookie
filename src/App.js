@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Header/Navbar";
 import Home from "./pages/Home";
 import Catalogo from "./pages/Catalogo";
 import Nosotros from "./pages/Nosotros"
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/" element= {<Home />} />
           <Route exact path="/catalogo" element= {<Catalogo />} />
-          <Route exact path="/" element= {<Nosotros />} />
+          <Route exact path="/nosotros" element= {<Nosotros />} />
           <Route exact path="/login" element= {<Login />} />
           <Route exact path="/register" element= {<Register />} />
         </Routes>
