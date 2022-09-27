@@ -1,0 +1,76 @@
+.contenedorPrincipal {
+  position: relative;
+  z-index: -3;
+  overflow: hidden;
+  /* padding-top: 60px; */
+}
+
+/* .controls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+} */
+
+.buttonControl {
+  position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: rgb(10, 10, 10);
+}
+
+.buttonControl > box-icon {
+  background-color: rgba(169, 169, 169, 0.514);
+  border-radius: 20px;
+}
+
+.rightControl {
+  right: 0;
+}
+
+.contenedorSLideShow {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+  transition: .5s ease all;
+  max-height: 635px;
+  position: relative;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+.textSlide {
+  background-color: rgba(255, 107, 107, 0.219);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 10px 60px; 
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 941px) {
+  .textSlide {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .contenedorPrincipal {
+    padding-top: 65px;
+  }
+}
+

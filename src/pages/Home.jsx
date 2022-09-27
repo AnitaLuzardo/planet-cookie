@@ -1,8 +1,11 @@
 import React from 'react'
+import SlideShow from '../components/SlideShow'
 
 function Home() {
   return (
-    <h1 className='pt-20'>.</h1>
+    <> 
+      <SlideShow />
+    </>
   )
 }
 
