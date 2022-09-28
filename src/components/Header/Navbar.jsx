@@ -1,8 +1,8 @@
-import React, { useState }from 'react'
-import { Link } from 'react-router-dom'
-import "../../stylesheets/Navbar.css"
-import Button from '../Button'
-import Cookie from '../../images/cookies.png'
+import React, { useState }from 'react';
+import { Link } from 'react-router-dom';
+import "../../stylesheets/Navbar.css";
+import Button from '../Button';
+import Cookie from '../../images/cookies.png';
 
 // ../images/cookies.png
 function Navbar() {

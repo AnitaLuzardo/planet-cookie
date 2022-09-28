@@ -51,36 +51,37 @@ const antes = () => {
 
 const SlideShow = () => {
   return (
-    <div className='contenedorPrincipal'>
-      <div className='contenedorSLideShow'>
-        <div className='slide'>
-          <img src={img1} alt="" />
-          <p className='textSlide'>Bienvenidos a Planet Cookie</p>
-        </div>
-        <div className='slide'>
-          <img src={img2} alt="" />
-          <p className='textSlide'>Sabores por descubrir</p>
-        </div>
-        <div className='slide'>
-          <img src={img3} alt="" />
-          <p className='textSlide'>Libres de gluten</p>
-        </div>
-        <div className='slide'>
-          <img src={img4} alt="" />
-          <p className='textSlide'>Conoce nuestro Planeta!</p>
+    <>
+      <div className='contenedorPrincipal'>
+        <div className='contenedorSLideShow'>
+          <div className='slide'>
+            <img src={img1} alt="" />
+            <p className='textSlide'>Bienvenidos a Planet Cookie</p>
+          </div>
+          <div className='slide'>
+            <img src={img2} alt="" />
+            <p className='textSlide'>Sabores por descubrir</p>
+          </div>
+          <div className='slide'>
+            <img src={img3} alt="" />
+            <p className='textSlide'>Libres de gluten</p>
+          </div>
+          <div className='slide'>
+            <img src={img4} alt="" />
+            <p className='textSlide'>Conoce nuestro Planeta!</p>
+          </div>
         </div>
       </div>
       <div className='controls'>
-      
         <button className='buttonControl' onClick={antes}> 
-          <box-icon name='left-arrow-alt' className= "arrow"></box-icon>  
+          <box-icon name='left-arrow-alt' className= "arrow"></box-icon> 
         </button>
         
         <button className='buttonControl rightControl' onClick={next}>
           <box-icon name='right-arrow-alt' className= "arrow"></box-icon>
         </button>
       </div>
-    </div>
+    </>
   )
 }
 
