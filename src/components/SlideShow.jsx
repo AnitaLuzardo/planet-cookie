@@ -4,56 +4,73 @@ import img1 from '../images/cookieI.jpg'
 import img2 from '../images/cookieII.jpg'
 import img3 from '../images/cookieIII.jpg'
 import img4 from '../images/cookieIV.jpg'
-// import { useState } from 'react'
-
-// function Carousel() {
-//   const images = ['cookieI.jpg, cookieII.jpg, cookieIII.jpg, cookieIV.jpg'];
-//   const [selectedIndex, setSelectedIndex] = useState(0);
-//   const [selectedImage, setSelectedImage] = useState(images[0]);
-
-//   const selectNewImage = (index: number, images: string[], next = true) => {
-//     const condition = next ? selectedIndex < images.length : selectedIndex > 0;
-//     const nextIndex =  next ?  (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex -1 : images.length -1;
-//     setSelectedImage (images[nextIndex]);
-//     setSelectedIndex(nextIndex);
-//   }
-
-//   const previous = () => {
-    // const condition = selectedIndex > 0;
-    // const nextIndex = condition ? selectedIndex -1 : images.length -1;
-    // setSelectedImage(nextIndex)
-    // setSelectedIndex(nextIndex)
-  //   selectNewImage(selectedIndex, images, false);
-  // }
-
-  // const next = () => {
-  //   // const condition = selectedIndex < images.length;
-  //   // const nextIndex = condition ? selectedIndex +1 : 0;
-  //   selectNewImage(selectedIndex, images);
-  // }
-
-//   return (
-//     <div>
-//       <img src="" alt="" />
-//     </div>
-//   )
-// }
-
-// export default Carousel
-
-const next = () => {
-  console.log('Siguiente');
-}
-
-const antes = () => {
-  console.log('Anterior');
-}
+import { useRef, useEffect } from 'react'
 
 const SlideShow = () => {
+  const slideShowCont = useRef(null);
+  const intervaloSlideShow = useRef(null)
+
+  const next = () => {
+    //Comprobamos que el slide tenga elementos
+    if(slideShowCont.current.children.length > 0) {
+      //Obtenemos el primero el elemento del slide
+      const firstElement = slideShowCont.current.children[0];
+
+      //Establecemos la transicion para el slide
+      slideShowCont.current.style.transition = `1000ms ease-out all`;
+
+      //Obtenemos el tamaño del Slide
+      const sizeSlide = slideShowCont.current.children[0].offsetWidth;
+
+      //Movemos el slide
+      slideShowCont.current.style.transform = ` translateX(-${sizeSlide}px)`
+
+      const transicion = () => {
+        //Reiniciamos la posicion del Slideshow
+        slideShowCont.current.style.transition = 'none';
+        slideShowCont.current.style.transform = `translateX(0)`;
+
+        //tomamos el primer elemento y lo mandamos al final.
+        slideShowCont.current.appendChild(firstElement);
+
+        slideShowCont.current.removeEventListener('transitionend', transicion)
+      }
+
+      //Eventlistener para cuando termine la animacion.
+      slideShowCont.current.addEventListener('transitionend', transicion)
+    }
+  }
+  
+  const before = () => {
+    console.log('before');
+    if(slideShowCont.current.children.length > 0) {
+      //Obtener el ultimo elemento del slide.
+      const index = slideShowCont.current.children.length -1;
+      const lastElement = slideShowCont.current.children[index];
+      slideShowCont.current.insertBefore(lastElement, slideShowCont.current.firstChild);
+      
+      slideShowCont.current.style.transition = 'none';
+
+      const sizeSlide = slideShowCont.current.children[0].offsetWidth;
+      slideShowCont.current.style.transform = `translateX(-${sizeSlide}px)`
+
+      setTimeout(() => {
+        slideShowCont.current.style.transition = '1000ms ease-out all';
+        slideShowCont.current.style.transform = ` translateX(0)`
+      }, 30)
+    }
+  }
+
+  useEffect(() => {
+    intervaloSlideShow.current = setInterval(() => {
+      next();
+    }, 5000);
+  })
+
   return (
     <>
       <div className='contenedorPrincipal'>
-        <div className='contenedorSLideShow'>
+        <div className='contenedorSLideShow' ref={slideShowCont}>
           <div className='slide'>
             <img src={img1} alt="" />
             <p className='textSlide'>Bienvenidos a Planet Cookie</p>
@@ -64,16 +81,14 @@ const SlideShow = () => {
           </div>
           <div className='slide'>
             <img src={img3} alt="" />
-            <p className='textSlide'>Libres de gluten</p>
+            <p className='textSlide'>Libre de gluten</p>
           </div>
           <div className='slide'>
             <img src={img4} alt="" />
             <p className='textSlide'>Conoce nuestro Planeta!</p>
           </div>
         </div>
-      </div>
-      <div className='controls'>
-        <button className='buttonControl' onClick={antes}> 
+        <button className='buttonControl' onClick={before}> 
           <box-icon name='left-arrow-alt' className= "arrow"></box-icon> 
         </button>
         
