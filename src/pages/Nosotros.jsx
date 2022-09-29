@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "../stylesheets/Nosotros.css"
 
 function Nosotros() {
   return (
-    <div>Nosotros</div>
+    <h1 className='title_nosotros'>Nosotros</h1>
   )
 }
 

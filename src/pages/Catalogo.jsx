@@ -1,8 +1,9 @@
 import React from 'react'
+import "../stylesheets/Catalogo.css"
 
 function Catalogo() {
   return (
-    <div>Catalogo</div>
+    <h1 className='title_catalogo'>Catalogo</h1>
   )
 }
 

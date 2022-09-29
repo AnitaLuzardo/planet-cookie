@@ -1,0 +1,8 @@
+.title_contact {
+    margin-top: 80px;
+    height: 500px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

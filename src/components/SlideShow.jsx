@@ -4,11 +4,10 @@ import img1 from '../images/cookieI.jpg'
 import img2 from '../images/cookieII.jpg'
 import img3 from '../images/cookieIII.jpg'
 import img4 from '../images/cookieIV.jpg'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 
 const SlideShow = () => {
   const slideShowCont = useRef(null);
-  const intervaloSlideShow = useRef(null)
 
   const next = () => {
     //Comprobamos que el slide tenga elementos
@@ -61,11 +60,11 @@ const SlideShow = () => {
     }
   }
 
-  useEffect(() => {
-    intervaloSlideShow.current = setInterval(() => {
-      next();
-    }, 5000);
-  })
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     next();
+  //   }, 6000);
+  // })
 
   return (
     <>

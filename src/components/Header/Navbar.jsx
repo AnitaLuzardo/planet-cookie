@@ -19,13 +19,13 @@ function Navbar() {
       <div className="md:flex items-center justify-between bg-red-100 py-4 md:px-10 px-7">
         <div className='font-bold500 text-2xl cursor-pointer  flex items-center 
         text-gray-800'>
-          <h1 className="logo-planet">
+          <Link to='/' className="logo-planet">
             Planet
             <span className='text-3x1 text-indigo-600 pt-2'>
               <img className='logo' src={Cookie} alt="" />
             </span>
             Cookie 
-          </h1>
+          </Link>
         </div>
         <div onClick={() => setOpen(!open)} className='text-xl absolute right-8 top-6 cursor-pointer md:hidden'>
           <h2 className="menu-resp">Menu<box-icon type='solid' name='cookie'></box-icon></h2>

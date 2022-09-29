@@ -1,9 +1,11 @@
 import React from "react";
 import './App.css';
 import Navbar from "./components/Header/Navbar";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Catalogo from "./pages/Catalogo";
 import Nosotros from "./pages/Nosotros"
+import Contactanos from "./pages/Contactanos";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import {
@@ -21,9 +23,11 @@ function App() {
           <Route exact path="/" element= {<Home />} />
           <Route exact path="/catalogo" element= {<Catalogo />} />
           <Route exact path="/nosotros" element= {<Nosotros />} />
+          <Route exact path="/contactanos" element={<Contactanos />}/>
           <Route exact path="/login" element= {<Login />} />
           <Route exact path="/register" element= {<Register />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
