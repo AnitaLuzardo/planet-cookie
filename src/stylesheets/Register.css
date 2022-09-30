@@ -1,5 +1,5 @@
 .register_title {
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 470px;
   margin-top: -50px;
 }
 
@@ -32,4 +32,14 @@
 
 .content_form_register {
   margin-top: 40px;
+}
+
+.cuenta {
+  text-align: center;
+  margin-top: -40px;
+  padding-bottom: 40px;
+}
+
+.loginRedirect {
+  color: crimson;
 }

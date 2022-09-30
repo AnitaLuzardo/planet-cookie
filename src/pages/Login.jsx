@@ -10,7 +10,7 @@ function Login() {
       <LoginForm />
       <p className='redirect_register'>
         No tienes cuenta? 
-        <Link className="regist_redirect" to={"/registro"}>Registrate aquí</Link>
+        <Link className="regist_redirect" to={"/register"}>Registrate aquí</Link>
       </p>
     </div>
   )
