@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../../stylesheets/Navbar.css";
 import Button from '../Button';
 import Cookie from '../../images/cookies.png';
+import CookieMenu from '../../images/cookie-solid-menu.png'
 
 // ../images/cookies.png
 function Navbar() {
@@ -28,7 +29,8 @@ function Navbar() {
           </Link>
         </div>
         <div onClick={() => setOpen(!open)} className='text-xl absolute right-8 top-6 cursor-pointer md:hidden'>
-          <h2 className="menu-resp">Menu<box-icon type='solid' name='cookie'></box-icon></h2>
+        
+          <h2 className="menu-resp">Menu <img src={CookieMenu} alt="" /> </h2>
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 pt-0 absolute md:static bg-red-100 md:z-auto z-[-1]
           left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-in ${open ? 'top-20': 'top-[-300px]'}`}>

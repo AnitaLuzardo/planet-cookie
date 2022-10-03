@@ -1,6 +1,7 @@
 .contenedorPrincipal {
   position: relative;
   overflow: hidden;
+  background-color: aqua;
 }
 
 .buttonControl {
