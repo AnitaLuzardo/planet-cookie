@@ -16,9 +16,18 @@ function LoginForm() {
     pwd: ''
   });
 
+  const [error, setError] = useState(false);
 
   const handleSubmit = e => { //evita el procesamiento automatico 
     e.preventDefault();
+    
+    const {email, pwd} = dataLogin;
+    
+    if(!email.trim() || !pwd.trim()){
+      setError(true);
+      return;
+    }
+
     loginApi(dataLogin);
   }
 
@@ -30,7 +39,15 @@ function LoginForm() {
     });
   }
 
+  const ViewError = () => (
+    <p className="text-center m-4 text-red-500">Debe llenar todos los campos</p>
+  ) 
+
   return (
+    <>
+        {
+          error ? <ViewError /> : null
+        }
       <form className="container_form" onSubmit={handleSubmit} >
         <input type="email" 
           name="email"
@@ -50,6 +67,7 @@ function LoginForm() {
           Iniciar sesión
         </button>
       </form>
+    </>
   )
 }
 

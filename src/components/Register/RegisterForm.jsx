@@ -3,7 +3,7 @@ import { useState } from 'react';
 import "../../stylesheets/Register.css";
 
 function RegisterForm() {
-  const [date, setDate] = useState({ //setDate actualiza el objeto
+  const [data, setData] = useState({ //setDate actualiza el objeto
     nombre: '',
     apellido: '',
     email: '',
@@ -16,8 +16,8 @@ function RegisterForm() {
   }
 
   const handleChange = (e) => {
-    setDate ({
-      ...date,
+    setData ({
+      ...data,
       [e.target.name]: e.target.value
     });
   }
