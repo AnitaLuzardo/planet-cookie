@@ -4,6 +4,8 @@ import img1 from '../images/cookieI.jpg'
 import img2 from '../images/cookieII.jpg'
 import img3 from '../images/cookieIII.jpg'
 import img4 from '../images/cookieIV.jpg'
+import leftArrow from '../images/left-arrow-alt.png'
+import rightArrow from '../images/right-arrow-alt.png'
 import { useRef } from 'react'
 
 const SlideShow = () => {
@@ -88,11 +90,13 @@ const SlideShow = () => {
           </div>
         </div>
         <button className='buttonControl' onClick={before}> 
-          <box-icon name='left-arrow-alt' className= "arrow"></box-icon> 
+          <img src={leftArrow} alt="" className='arrow box-icon'/>
+          {/* <box-icon name='left-arrow-alt' className= "arrow"></box-icon>  */}
         </button>
         
         <button className='buttonControl rightControl' onClick={next}>
-          <box-icon name='right-arrow-alt' className= "arrow"></box-icon>
+          <img src={rightArrow} alt="" className='arrow box-icon'/>
+          {/* <box-icon name='right-arrow-alt' className= "arrow"></box-icon> */}
         </button>
       </div>
     </>

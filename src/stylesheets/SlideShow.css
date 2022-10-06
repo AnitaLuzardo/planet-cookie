@@ -12,10 +12,11 @@
 	border: none;
 	font-size: 20px;
 	color: rgb(10, 10, 10);
+  background-color: rgba(255, 107, 107, 0.219);
+  border-radius: 14px;
 }
 
 .buttonControl > box-icon {
-  background-color: rgba(169, 169, 169, 0.514);
   border-radius: 20px;
 }
 
@@ -63,4 +64,3 @@
     padding-top: 65px;
   }
 }
-
