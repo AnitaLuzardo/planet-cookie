@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import loginApi from '../../Services/loginApi';
+// import loginApi from '../../Services/loginApi';
 
 function LoginForm() {
 
@@ -16,19 +16,19 @@ function LoginForm() {
     pwd: ''
   });
 
-  const [error, setError] = useState(false);
+//   const [error, setError] = useState(false);
 
   const handleSubmit = e => { //evita el procesamiento automatico 
     e.preventDefault();
     
-    const {email, pwd} = dataLogin;
+    // const {email, pwd} = dataLogin;
     
-    if(!email.trim() || !pwd.trim()){
-      setError(true);
-      return;
-    }
+    // if(!email.trim() || !pwd.trim()){
+    //   setError(true);
+    //   return;
+    // }
 
-    loginApi(dataLogin);
+    // loginApi(dataLogin);
   }
 
   const handleChange = (e) => {
@@ -39,15 +39,15 @@ function LoginForm() {
     });
   }
 
-  const ViewError = () => (
-    <p className="text-center m-4 text-red-500">Debe llenar todos los campos</p>
-  ) 
+//   const ViewError = () => (
+//     <p className="text-center m-4 text-red-500">Debe llenar todos los campos</p>
+//   ) 
 
   return (
     <>
-      {
+      {/* {
         error ? <ViewError /> : null
-      }
+      } */}
       <form className="container_form" onSubmit={handleSubmit} >
         <input type="email" 
           name="email"
