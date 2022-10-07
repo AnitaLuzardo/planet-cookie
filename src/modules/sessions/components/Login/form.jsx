@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 // import loginApi from '../../Services/loginApi';
 
-function LoginForm() {
+function LoginForm({ login }) {
 
   // const estado = useState(un valor cualquiera);
   // estado = [null, callback];
@@ -21,14 +21,15 @@ function LoginForm() {
   const handleSubmit = e => { //evita el procesamiento automatico 
     e.preventDefault();
     
-    // const {email, pwd} = dataLogin;
+    const {email, pwd} = dataLogin;
     
-    // if(!email.trim() || !pwd.trim()){
-    //   setError(true);
-    //   return;
-    // }
+    if(!email || !pwd){
+      // setError(true);
+      alert('Debe completar los campos');
+      return;
+    }
 
-    // loginApi(dataLogin);
+    login(dataLogin);
   }
 
   const handleChange = (e) => {
