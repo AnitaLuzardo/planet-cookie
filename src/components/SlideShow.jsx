@@ -93,7 +93,6 @@ const SlideShow = () => {
           <img src={leftArrow} alt="" className='arrow box-icon'/>
           {/* <box-icon name='left-arrow-alt' className= "arrow"></box-icon>  */}
         </button>
-        
         <button className='buttonControl rightControl' onClick={next}>
           <img src={rightArrow} alt="" className='arrow box-icon'/>
           {/* <box-icon name='right-arrow-alt' className= "arrow"></box-icon> */}

@@ -45,9 +45,9 @@ function LoginForm() {
 
   return (
     <>
-        {
-          error ? <ViewError /> : null
-        }
+      {
+        error ? <ViewError /> : null
+      }
       <form className="container_form" onSubmit={handleSubmit} >
         <input type="email" 
           name="email"
