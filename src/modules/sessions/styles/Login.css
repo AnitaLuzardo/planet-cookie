@@ -26,3 +26,23 @@
     color: crimson;
     padding-left: 5px;
   }
+
+  .errors {
+    color: crimson;
+    text-align: center;
+    margin: 5px;
+  }
+
+  @media only screen and (min-width: 941px) {
+    .container_login_form {
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .container_login_form {
+      margin-top: 125px;
+      margin-bottom: 65px;
+    }
+  }

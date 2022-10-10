@@ -1,27 +1,27 @@
 .register_title {
-  padding-top: 70px;
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 200;
+  margin: 25px;
+}
+
+.container_form_registeeer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .input_register {
   border: 1px solid grey;
   border-radius: 25px;
-  padding: 5px;
+  padding: 10px;
   margin: 15px;
   text-indent: 15px;
   outline: none;
-}
-
-.container_register {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 470px;
-  margin-top: -50px;
+  width: 300px;
 }
 
 .container_form {
@@ -30,16 +30,22 @@
   align-items: center;
 }
 
-.content_form_register {
-  margin-top: 40px;
-}
-
 .cuenta {
   text-align: center;
-  margin-top: -40px;
-  padding-bottom: 40px;
+  margin: 15px;
 }
 
 .loginRedirect {
   color: crimson;
+}
+
+.container_form_registeeer {
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 941px) {
+  .input_register {
+    width: 440px;
+  }
 }

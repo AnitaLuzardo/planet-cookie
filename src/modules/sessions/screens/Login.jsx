@@ -18,7 +18,7 @@ function Login() {
       <div className='content_form_login'>
         <h1 className='loginTitle'>Bienvenido</h1>
         {errors && (
-          <p>{errors}</p>
+          <p className='errors'>{errors}</p>
         )}
         <LoginForm login={login} />
         <p className='redirect_register'>
