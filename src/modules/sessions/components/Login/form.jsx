@@ -21,13 +21,13 @@ function LoginForm({ login }) {
   const handleSubmit = e => { //evita el procesamiento automatico 
     e.preventDefault();
     
-    const {email, pwd} = dataLogin;
+    // const {email, pwd} = dataLogin;
     
-    if(!email || !pwd){
-      // setError(true);
-      alert('Debe completar los campos');
-      return;
-    }
+    // if(!email || !pwd){
+    //   // setError(true);
+    //   alert('Debe completar los campos');
+    //   return;
+    // }
 
     login(dataLogin);
   }
