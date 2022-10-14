@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import RegisterForm from '../components/Register/RegisterForm'
-import "../stylesheets/Register.css"
+import "../styles/Register.css"
 
 function Register() {
   return (

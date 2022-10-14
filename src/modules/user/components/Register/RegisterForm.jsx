@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "../../stylesheets/Register.css";
+import "../../styles/Register.css";
 
 function RegisterForm() {
   const [data, setData] = useState({ //setDate actualiza el objeto

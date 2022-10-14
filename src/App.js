@@ -7,7 +7,7 @@ import Catalogo from "./pages/Catalogo";
 import Nosotros from "./pages/Nosotros"
 import Contactanos from "./pages/Contactanos";
 import Login from "./modules/sessions/screens/Login";
-import Register from "./pages/Register";
+import Register from "./modules/user/screens/Register";
 import {
   BrowserRouter as Router,
   Routes,
