@@ -2,17 +2,20 @@ import React from 'react';
 import { useState } from 'react';
 import "../../styles/Register.css";
 
-function RegisterForm() {
+function RegisterForm({ register }) {
   const [data, setData] = useState({ //setDate actualiza el objeto
     nombre: '',
     apellido: '',
+    telefono: '',
     email: '',
-    password: '',
-    confPassword: ''
+    pwd: '',
+    confirmarPassword: ''
   })
 
   const handleSubmit = e => { //evita el procesamiento automatico 
     e.preventDefault()
+
+    register(data);
   }
 
   const handleChange = (e) => {
@@ -36,6 +39,12 @@ function RegisterForm() {
         className="input_register"
         onChange={handleChange}
       />
+      <input type="number" 
+        name="telefono"
+        placeholder="telefono"
+        className="input_register"
+        onChange={handleChange}
+      />
       <input type="email" 
         name="email"
         placeholder="Email"
@@ -43,13 +52,13 @@ function RegisterForm() {
         onChange={handleChange}
       />
       <input type="password" 
-        name="password"
+        name="pwd"
         placeholder="Password"
         className="input_register"
         onChange={handleChange}
       /> 
       <input type="password" 
-        name="confPassword"
+        name="confirmarPassword"
         placeholder="Confirmar Password"
         className="input_register"
         onChange={handleChange}
