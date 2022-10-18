@@ -4,14 +4,13 @@ import RegisterForm from '../components/Register/RegisterForm'
 import "../styles/Register.css"
 import { fetchRegister } from '../actions'
 import { useDispatch } from 'react-redux'
-
-
+// import { useEffect } from 'react'
 
 function Register() {
   const dispatch = useDispatch();
 
   const register = async (form) => {
-    await fetchRegister (form, dispatch)
+    await fetchRegister(form, dispatch)
   }
 
   return (
