@@ -22,7 +22,6 @@ function LoginForm({ login }) {
     e.preventDefault();
     
     // const {email, pwd} = dataLogin;
-    
     // if(!email || !pwd){
     //   // setError(true);
     //   alert('Debe completar los campos');
@@ -33,7 +32,7 @@ function LoginForm({ login }) {
   }
 
   const handleChange = (e) => {
-    console.log('name', e.target.name, '- value', e.target.value);
+    // console.log('name', e.target.name, '- value', e.target.value);
     setDataLogin({
       ...dataLogin,
       [e.target.name]: e.target.value

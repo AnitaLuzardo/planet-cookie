@@ -25,6 +25,8 @@ export const fetchLogin = async (form, dispatch) => {
     const user = response.data;
     dispatch(getUserSuccess(user));
 
+    localStorage.setItem("user", JSON.stringify(user));
+
   } catch (error) {
     console.log(error);
     const responseError = error.response.data.message;
