@@ -8,8 +8,10 @@ import { useEffect } from 'react'
 
 function Register() {
   const dispatch = useDispatch();
-  const rols = useSelector(state => state.users.rols)
+  const rols = useSelector(state => state.users.rols);
   // console.log('ROLES', rols);
+
+  const errors = useSelector(state => state.users.errors);
 
   useEffect(() => {
     fetchRols(dispatch)
@@ -30,6 +32,9 @@ function Register() {
     <div className='container_form_registeeer'>
       <div className='content_form_register'>
         <h1 className='register_title'>Registro</h1>
+        {errors && (
+          <p className='errors'>{errors}</p>
+        )}
         <RegisterForm register= {register} />
         <p className="cuenta">¿Ya tienes una Cuenta?
           <Link className='loginRedirect' to="/login"> Ingresá acá</Link>

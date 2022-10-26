@@ -1,8 +1,9 @@
 //Redecer Roles
-import { FETCH_ROLS } from "./types";
+import { FETCH_ROLS, ERROR_REGISTER } from "./types";
 
 const initialState = {
-  rols: []
+  rols: [],
+  errors: null
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -13,6 +14,11 @@ export default (state = initialState, action) => {
         ...state,
         rols: action.payload
       };
+    case ERROR_REGISTER:
+      return {
+        ...state,
+        errors: action.payload
+      }
     default:
       return state;
   }

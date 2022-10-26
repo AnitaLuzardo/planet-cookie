@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
-import Catalogo from "./pages/Catalogo";
+import Catalogo from "./modules/products/screens/Catalogo";
 import Nosotros from "./pages/Nosotros"
 import Contactanos from "./pages/Contactanos";
 import Login from "./modules/sessions/screens/Login";

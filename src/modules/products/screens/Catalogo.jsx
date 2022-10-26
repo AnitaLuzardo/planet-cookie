@@ -1,5 +1,5 @@
 import React from 'react'
-import "../stylesheets/Catalogo.css"
+import "../styles/Catalogo.css"
 
 function Catalogo() {
   return (

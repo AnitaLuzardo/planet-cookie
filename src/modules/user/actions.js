@@ -26,7 +26,9 @@ export const fetchRegister = async(form, dispatch) => {
     const user = responseRegister.data
     dispatch(userRegister(user));
   } catch (error) {
-    console.log('ERROOOOOR', error);
+    // console.log('ERROOOOOR', error);
+    const responseErrorRegister = error.response.data.message;
+    dispatch(userRegisterError(responseErrorRegister));
   }
 }
 
