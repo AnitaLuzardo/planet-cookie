@@ -1,20 +1,27 @@
 .title_contact {
-  margin-top: 60px;
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
 }
 
 .container_contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   padding-top: 50px;
-  padding-bottom: 30px;
   background: url(../images/cookie_fondoII.jpg);
   background-size: cover;
+}
+
+.contact_h3 {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content_p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2em;
 }
 
 .content_form {
@@ -25,18 +32,32 @@
 
 .contact_input {
   border: 1px solid gray;
-  padding: 15px;
+  padding: 10px;
   border-radius: 30px;
   margin: 15px;
+  text-indent: 15px;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact_input_text {
+  text-indent: 15px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 941px){
   .contact_input {
-    /* border: 1px solid gray;
-    padding: 15px;
-    border-radius: 30px;
-    margin: 15px; */
     width: 500px;
+  }
+
+  .container_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .contact_input_text {
@@ -46,9 +67,23 @@
     height: 250px;
     width: 500px;
   }
+
+  .content_form {
+    margin-top: 20px;
+    height: 400px;
+  }
+
+  .content_inf {
+    width: 40%;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 940px){
+  .title_contact {
+    margin-top: 60px;
+  }
+
   .contact_input {
     width: 100%;
   }
@@ -61,7 +96,21 @@
     padding: 10px;
   }
 
-  .content_form {
+  .container_form_contact {
     width: 80%;
+  }
+
+  .container_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+
+  .content_inf {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
