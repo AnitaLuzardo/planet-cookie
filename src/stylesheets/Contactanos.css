@@ -14,6 +14,7 @@
   font-size: 18px;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
+  text-align: initial;
 }
 
 .content_p {
@@ -22,6 +23,7 @@
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   line-height: 2em;
+  text-align: initial;
 }
 
 .content_form {
@@ -76,6 +78,10 @@
   .content_inf {
     width: 40%;
     text-align: center;
+  }
+
+  .content_p {
+    text-align: initial;
   }
 }
 

@@ -16,7 +16,7 @@
   width: 260px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   margin: 35px;
 }
 
@@ -33,3 +33,39 @@
   font-size: 35px;
   font-family: 'Amatic SC', cursive;
 }
+
+.content_container_us {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.content_container_us::-webkit-scrollbar {
+  width: 7px;
+  /* background: rgba(255, 107, 107, 0.219); */
+}
+
+.content_container_us::-webkit-scrollbar-thumb {
+  background-color: #ff6b6b81;
+  border-radius: 8px;
+}
+
+.content_planet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_Nosotros {
+  width: 100px;
+}
+
+.container_scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+

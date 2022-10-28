@@ -10,7 +10,7 @@ function Navbar() {
   let enlace = [
     {name: "Inicio", link:"/"},
     {name: "Catalogo", link:"/catalogo"},
-    {name: "Nosotros", link:"/nosotros"}
+    {name: "Contactanos", link:"/contactanos"}
   ]
 
   let [open, setOpen] = useState(false)
