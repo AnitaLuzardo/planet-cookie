@@ -12,9 +12,9 @@ function form() {
             <input type="check" className='checkFilter' /> Naranja  
           </div>
           <div className='contentCheck'> 
-          <input type="check" className='checkFilter' /> Frutilla <br />
-          <input type="check" className='checkFilter' /> Limon <br />
-          <input type="check" className='checkFilter' /> Frutos secos
+            <input type="check" className='checkFilter' /> Frutilla <br />
+            <input type="check" className='checkFilter' /> Limon <br />
+            <input type="check" className='checkFilter' /> Frutos secos
           </div>
         </div>
         <button className="bg-indigo-600 text-white py-1 px-4 rounded  
