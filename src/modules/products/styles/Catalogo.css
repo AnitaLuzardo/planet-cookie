@@ -7,6 +7,13 @@
   padding: 30px;
 }
 
+.title_filter {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
 .contentProduct {
   display: flex;
   flex-wrap: wrap;
@@ -16,4 +23,36 @@
 
 .img_product {
   width: 250px;
+  border-radius: 8px;
+}
+
+.containerProduct {
+  padding: 25px;
+  margin: 10px;
+}
+
+.formContainerProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contentCheck {
+  margin: 20px;
+}
+
+.checkFilter {
+  border: 1px solid gray;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

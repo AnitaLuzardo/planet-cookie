@@ -2,11 +2,13 @@ import React from 'react';
 import "../styles/Catalogo.css";
 import Products from "../components/Product";
 import { CookiesList } from "../helpers/CookiesList";
+import FormFiltros from "../components/form"
 
 function Catalogo() {
   return (
     <div>
-      <h1 className='title_catalogo'>Catalogo</h1>
+      <h1 className='title_catalogo'>Nuestros Productos</h1>
+      <FormFiltros />
       <div className='contentProduct'>
         {CookiesList.map((products, key) => {
           return (

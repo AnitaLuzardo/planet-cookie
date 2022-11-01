@@ -9,7 +9,7 @@ import CookieMenu from '../../images/cookie-solid-menu.png'
 function Navbar() {
   let enlace = [
     {name: "Inicio", link:"/"},
-    {name: "Catalogo", link:"/catalogo"},
+    {name: "Productos", link:"/catalogo"},
     {name: "Contactanos", link:"/contactanos"}
   ]
 
