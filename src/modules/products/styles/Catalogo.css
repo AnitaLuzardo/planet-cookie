@@ -1,8 +1,19 @@
 .title_catalogo {
   margin-top: 80px;
-  height: 100%;
   font-size: 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  padding: 30px;
+}
+
+.contentProduct {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img_product {
+  width: 250px;
 }

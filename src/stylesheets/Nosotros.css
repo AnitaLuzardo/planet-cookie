@@ -37,6 +37,8 @@
 .content_container_us {
   display: flex;
   overflow-x: scroll;
+  background: rgba(240, 248, 255, 0.479);
+  border-radius: 15px;
 }
 
 .content_container_us::-webkit-scrollbar {
@@ -58,6 +60,7 @@
 
 .img_Nosotros {
   width: 100px;
+  padding-top: 8px;
 }
 
 .container_scroll {
@@ -66,6 +69,21 @@
   align-items: center;
   width: 75%;
   margin: auto;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
+
+.frut_img {
+  width: 150px;
+}
+
+.content_text {
+  padding-top: 28px;
+}
+
+.gluten_free {
+  padding-top: 30px;
+}
+
+
 
