@@ -1,0 +1,40 @@
+.titleDetail {
+  padding-top: 80px;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.containerPrincipal {
+  /* display: flex; */
+  overflow: hidden;
+  width: 50%;
+  margin: 25px;
+}
+
+.slideshow {
+  display: flex;
+}
+
+.slideProduct {
+  min-width: 100%; 
+  overflow: hidden;
+  transition: 0.3s ease all;
+  /* z-index: ; */
+  /* max-height: ; */
+  /* position: relative; para colocar texto por encima de la imagen  */
+}
+
+.img_productDetail {
+  width: 100%;
+}
+
+.control_slideProduct {
+  padding-inline: 20px;
+  padding-top: 10px;
+}
+
+.leftRightButton {
+  width: 30px;
+  cursor: pointer;
+}

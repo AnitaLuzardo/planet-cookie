@@ -1,12 +1,12 @@
-import React from 'react'
-import '../stylesheets/SlideShow.css'
-import img1 from '../images/cookieI.jpg'
-import img2 from '../images/cookieII.jpg'
-import img3 from '../images/cookieIII.jpg'
-import img4 from '../images/cookieIV.jpg'
-import leftArrow from '../images/left-arrow-alt.png'
-import rightArrow from '../images/right-arrow-alt.png'
-import { useRef } from 'react'
+import React from 'react';
+import '../stylesheets/SlideShow.css';
+import img1 from '../images/cookieI.jpg';
+import img2 from '../images/cookieII.jpg';
+import img3 from '../images/cookieIII.jpg';
+import img4 from '../images/cookieIV.jpg';
+import leftArrow from '../images/left-arrow-alt.png';
+import rightArrow from '../images/right-arrow-alt.png';
+import { useRef } from 'react';
 
 const SlideShow = () => {
   const slideShowCont = useRef(null);

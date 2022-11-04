@@ -7,14 +7,14 @@ function form() {
       <form action="" className="formFilter">
         <div className='formContainerProduct'>
           <div className='contentCheck'>
-            <input type="check" className='checkFilter' /> Chocolate <br />
-            <input type="check" className='checkFilter' /> Vainilla <br />
-            <input type="check" className='checkFilter' /> Naranja  
+            <input type="checkbox" className='checkFilter' /> Chocolate <br />
+            <input type="checkbox" className='checkFilter' /> Vainilla <br />
+            <input type="checkbox" className='checkFilter' /> Naranja  
           </div>
           <div className='contentCheck'> 
-            <input type="check" className='checkFilter' /> Frutilla <br />
-            <input type="check" className='checkFilter' /> Limon <br />
-            <input type="check" className='checkFilter' /> Frutos secos
+            <input type="checkbox" className='checkFilter' /> Frutilla<br />
+            <input type="checkbox" className='checkFilter' /> Limon <br />
+            <input type="checkbox" className='checkFilter' /> Frutos secos
           </div>
         </div>
         <button className="bg-indigo-600 text-white py-1 px-4 rounded  
