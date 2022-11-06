@@ -7,6 +7,7 @@ import img4 from '../images/cookieIV.jpg';
 import leftArrow from '../images/left-arrow-alt.png';
 import rightArrow from '../images/right-arrow-alt.png';
 import { useRef } from 'react';
+import {useEffect} from 'react'
 
 const SlideShow = () => {
   const slideShowCont = useRef(null);
@@ -43,7 +44,6 @@ const SlideShow = () => {
   }
   
   const before = () => {
-    console.log('before');
     if(slideShowCont.current.children.length > 0) {
       //Obtener el ultimo elemento del slide.
       const index = slideShowCont.current.children.length -1;
@@ -62,11 +62,14 @@ const SlideShow = () => {
     }
   }
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     next();
-  //   }, 6000);
-  // })
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      next();
+    }, 3000);
+    return () => {
+      clearInterval(intervalId);
+    }
+  }, [])
 
   return (
     <>
