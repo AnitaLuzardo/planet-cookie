@@ -1,13 +1,12 @@
 import React from 'react';
 import '../stylesheets/SlideShow.css';
-import img1 from '../images/cookieI.jpg';
-import img2 from '../images/cookieII.jpg';
-import img3 from '../images/cookieIII.jpg';
-import img4 from '../images/cookieIV.jpg';
 import leftArrow from '../images/left-arrow-alt.png';
 import rightArrow from '../images/right-arrow-alt.png';
+// import ImgSlide from './slideHome';
+import imgHome from '../pages/helpers/imgHome';
 import { useRef } from 'react';
 import {useEffect} from 'react'
+
 
 const SlideShow = () => {
   const slideShowCont = useRef(null);
@@ -75,22 +74,20 @@ const SlideShow = () => {
     <>
       <div className='contenedorPrincipal'>
         <div className='contenedorSLideShow' ref={slideShowCont}>
-          <div className='slide'>
-            <img src={img1} alt="" />
-            <p className='textSlide'>Bienvenidos a Planet Cookie</p>
-          </div>
-          <div className='slide'>
-            <img src={img2} alt="" />
-            <p className='textSlide'>Sabores por descubrir</p>
-          </div>
-          <div className='slide'>
-            <img src={img3} alt="" />
-            <p className='textSlide'>Libre de gluten</p>
-          </div>
-          <div className='slide'>
-            <img src={img4} alt="" />
-            <p className='textSlide'>Conoce nuestro Planeta!</p>
-          </div>
+         {imgHome.map((image, i) => {
+          return(
+            <div className='slide' key={i}>
+              <img src={image.img} alt="" />
+              {image.title ? <p className='textSlide'>{image.title}</p> : null}
+            </div>
+          
+            // <ImgSlide 
+            //   key={i}
+            //   img= {image.img}
+            //   title= {image.title}
+            // />
+          )
+         })}
         </div>
         <button className='buttonControl' onClick={before}> 
           <img src={leftArrow} alt="" className='arrow box-icon'/>
