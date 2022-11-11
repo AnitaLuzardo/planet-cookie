@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import LoginForm from '../components/Login/form'
-import '../styles/Login.css';
+import loginStyle from '../styles/Login.module.css';
 import { fetchLogin } from '../actions';
 
 function Login() {
@@ -14,16 +14,16 @@ function Login() {
   }
 
   return (
-    <div className='container_login_form'> 
-      <div className='content_form_login'>
-        <h1 className='loginTitle'>Bienvenido</h1>
+    <div className={loginStyle.container_login_form}> 
+      <div className={loginStyle.content_form_login}>
+        <h1 className={loginStyle.loginTitle}>Bienvenido</h1>
         {errors && (
-          <p className='errors'>{errors}</p>
+          <p className={loginStyle.errors}>{errors}</p>
         )}
         <LoginForm login={login} />
-        <p className='redirect_register'>
+        <p className={loginStyle.redirect_register}>
           No tienes cuenta? 
-          <Link className="regist_redirect" to={"/register"}>Registrate aquí</Link>
+          <Link className={loginStyle.regist_redirect} to={"/register"}>Registrate aquí</Link>
         </p>
       </div>
     </div>

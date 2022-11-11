@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import loginStyle from '../../styles/Login.module.css';
 // import loginApi from '../../Services/loginApi';
 
 function LoginForm({ login }) {
@@ -48,17 +49,17 @@ function LoginForm({ login }) {
       {/* {
         error ? <ViewError /> : null
       } */}
-      <form className="container_form" onSubmit={handleSubmit} >
+      <form className={loginStyle.container_form} onSubmit={handleSubmit} >
         <input type="email" 
           name="email"
           placeholder="Email"
-          className="input_register"
+          className={loginStyle.input_login}
           onChange={handleChange}
         />
         <input type="password" 
           name="pwd"
           placeholder="Password"
-          className="input_register"
+          className={loginStyle.input_login}
           onChange={handleChange}
         /> 
         <button 

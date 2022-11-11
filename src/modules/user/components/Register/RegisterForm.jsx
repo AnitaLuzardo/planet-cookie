@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import "../../styles/Register.css";
+import registerStyle from"../../styles/Register.module.css"
+// import "../../styles/Register.css";
+
 
 function RegisterForm({ register }) {
   const [data, setData] = useState({ //setDate actualiza el objeto
@@ -26,41 +28,41 @@ function RegisterForm({ register }) {
   }
 
   return (
-    <form className="container_form" onSubmit={handleSubmit} >
+    <form className={registerStyle.container_form} onSubmit={handleSubmit} >
       <input type="text" 
         name="nombre"
         placeholder="Nombre"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange} //esta detectando el cambio del input
       />
       <input type="text" 
         name="apellido"
         placeholder="Apellido"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange}
       />
       <input type="number" 
         name="telefono"
         placeholder="telefono"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange}
       />
       <input type="email" 
         name="email"
         placeholder="Email"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange}
       />
       <input type="password" 
         name="pwd"
         placeholder="Password"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange}
       /> 
       <input type="password" 
         name="confirmarPassword"
         placeholder="Confirmar Password"
-        className="input_register"
+        className={registerStyle.input_register}
         onChange={handleChange}
       />
       <button 

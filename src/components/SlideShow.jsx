@@ -80,7 +80,6 @@ const SlideShow = () => {
               <img src={image.img} alt="" />
               {image.title ? <p className='textSlide'>{image.title}</p> : null}
             </div>
-          
             // <ImgSlide 
             //   key={i}
             //   img= {image.img}

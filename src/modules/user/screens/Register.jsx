@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import RegisterForm from '../components/Register/RegisterForm'
-import "../styles/Register.css"
+import registerStyle from"../styles/Register.module.css"
 import { fetchRegister, fetchRols } from '../actions'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
@@ -29,15 +29,15 @@ function Register() {
   }
 
   return (
-    <div className='container_form_registeeer'>
-      <div className='content_form_register'>
-        <h1 className='register_title'>Registro</h1>
+    <div className={registerStyle.container_form_registeeer}>
+      <div className={registerStyle.content_form_register}>
+        <h1 className={registerStyle.register_title}>Registro</h1>
         {errors && (
-          <p className='errors'>{errors}</p>
+          <p className={registerStyle.errors}>{errors}</p>
         )}
         <RegisterForm register= {register} />
-        <p className="cuenta">¿Ya tienes una Cuenta?
-          <Link className='loginRedirect' to="/login"> Ingresá acá</Link>
+        <p className={registerStyle.cuenta}>¿Ya tienes una Cuenta?
+          <Link className={registerStyle.loginRedirect} to="/login"> Ingresá acá</Link>
         </p>
       </div>
     </div>

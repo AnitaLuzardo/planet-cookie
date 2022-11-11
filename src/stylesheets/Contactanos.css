@@ -34,7 +34,7 @@
 
 .contact_input {
   border: 1px solid gray;
-  padding: 10px;
+  padding: 6px;
   border-radius: 30px;
   margin: 15px;
   text-indent: 15px;
@@ -99,7 +99,7 @@
     height: 280px;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
   }
 
   .container_form_contact {
