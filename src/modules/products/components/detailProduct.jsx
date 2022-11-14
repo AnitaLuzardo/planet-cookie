@@ -56,29 +56,29 @@ const detailProduct = () => {
   }
 
   return (
-    <div className='containerPrincipal'>
-      <div className='slideshow' ref={slideShowCont}>
-        <div className='slideProduct'>
-          <img src={cookieI} alt="" className='img_productDetail'/>
+    <div className="containerDetail">
+      <div className="slideshow" ref={slideShowCont}>
+        <div className="slideProduct">
+          <img src={cookieI} alt="" className="img_productDetail"/>
         </div>
-        <div className='slideProduct'>
-          <img src={cookieII} alt="" className='img_productDetail'/>
+        <div className="slideProduct">
+          <img src={cookieII} alt="" className="img_productDetail"/>
         </div>
-        <div className='slideProduct'>
-          <img src={cookieIII} alt="" className='img_productDetail'/>
+        <div className="slideProduct">
+          <img src={cookieIII} alt="" className="img_productDetail"/>
         </div>
-        <div className='slideProduct'>
-          <img src={cookieIV} alt="" className='img_productDetail'/>
+        <div className="slideProduct">
+          <img src={cookieIV} alt="" className="img_productDetail"/>
         </div>
       </div>
-      <div className='container_control'>
-        <button className='control_slideProduct' onClick={before}>
+      
+        <button className='control_slideProduct leftButton' onClick={before}>
           <img src={leftArrow} alt="" className='leftRightButton'/>
         </button>
         <button className='control_slideProduct' onClick={next} >
           <img src={rightArrow} alt="" className='leftRightButton'/>
         </button>
-      </div>
+     
     </div>
   )
 }

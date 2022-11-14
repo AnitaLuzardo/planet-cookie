@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.containerPrincipal {
+.containerDetail {
   /* display: flex; */
   overflow: hidden;
   width: 50%;
@@ -20,9 +20,6 @@
   min-width: 100%; 
   overflow: hidden;
   transition: 0.3s ease all;
-  /* z-index: ; */
-  /* max-height: ; */
-  /* position: relative; para colocar texto por encima de la imagen  */
 }
 
 .img_productDetail {

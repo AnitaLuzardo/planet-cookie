@@ -2,13 +2,11 @@ import React from 'react';
 import '../stylesheets/SlideShow.css';
 import leftArrow from '../images/left-arrow-alt.png';
 import rightArrow from '../images/right-arrow-alt.png';
-// import ImgSlide from './slideHome';
-import imgHome from '../pages/helpers/imgHome';
 import { useRef } from 'react';
-import {useEffect} from 'react'
+// import {useEffect} from 'react'
 
 
-const SlideShow = () => {
+const SlideShow = ({ images }) => {
   const slideShowCont = useRef(null);
 
   const next = () => {
@@ -61,34 +59,29 @@ const SlideShow = () => {
     }
   }
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      next();
-    }, 3000);
-    return () => {
-      clearInterval(intervalId);
-    }
-  }, [])
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     next();
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   }
+  // }, [])
 
   return (
     <>
       <div className='contenedorPrincipal'>
         <div className='contenedorSLideShow' ref={slideShowCont}>
-         {imgHome.map((image, i) => {
+         {images.map((image, i) => {
           return(
             <div className='slide' key={i}>
-              <img src={image.img} alt="" />
+              <img src={image.url} alt="" />
               {image.title ? <p className='textSlide'>{image.title}</p> : null}
             </div>
-            // <ImgSlide 
-            //   key={i}
-            //   img= {image.img}
-            //   title= {image.title}
-            // />
           )
          })}
         </div>
-        <button className='buttonControl' onClick={before}> 
+        <button className='buttonControl leftButton' onClick={before}> 
           <img src={leftArrow} alt="" className='arrow box-icon'/>
           {/* <box-icon name='left-arrow-alt' className= "arrow"></box-icon>  */}
         </button>

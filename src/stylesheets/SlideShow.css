@@ -4,6 +4,14 @@
   background-color: rgba(255, 107, 107, 0.219);
 }
 
+.rightControl {
+  right: 5px;
+}
+
+.leftButton {
+  left: 5px;
+}
+
 .buttonControl {
   position: absolute;
 	top: 60%;
@@ -16,12 +24,17 @@
   border-radius: 14px;
 }
 
-.buttonControl > box-icon {
-  border-radius: 20px;
-}
-
 .rightControl {
-  right: 0;
+  position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: rgb(10, 10, 10);
+  background-color: rgba(255, 107, 107, 0.219);
+  border-radius: 14px;
+  right: 10px;
 }
 
 .contenedorSLideShow {

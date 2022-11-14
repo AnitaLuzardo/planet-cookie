@@ -16,7 +16,7 @@ function Login() {
   return (
     <div className={loginStyle.container_login_form}> 
       <div className={loginStyle.content_form_login}>
-        <h1 className={loginStyle.loginTitle}>Bienvenido</h1>
+        <h1 className={loginStyle.login_title}>Bienvenido</h1>
         {errors && (
           <p className={loginStyle.errors}>{errors}</p>
         )}
