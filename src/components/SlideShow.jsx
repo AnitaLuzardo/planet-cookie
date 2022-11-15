@@ -6,7 +6,15 @@ import { useRef } from 'react';
 // import {useEffect} from 'react'
 
 
-const SlideShow = ({ images }) => {
+const SlideShow = ({
+  images,
+  width,
+  small,
+  paddingHome,
+  border,
+  extraClasses,
+  arrowsBottom
+}) => {
   const slideShowCont = useRef(null);
 
   const next = () => {
@@ -70,24 +78,28 @@ const SlideShow = ({ images }) => {
 
   return (
     <>
-      <div className='contenedorPrincipal'>
-        <div className='contenedorSLideShow' ref={slideShowCont}>
+      <div
+        // className={`contenedorPrincipal ${small ? 'small' : null}`}
+        className={`contenedorPrincipal ${extraClasses ? extraClasses : null} 
+        ${paddingHome ? paddingHome : undefined}
+        ${border ? border : undefined}`}
+        style={width ? { width } : undefined}
+      >
+        <div className="contenedorSLideShow" ref={slideShowCont}>
          {images.map((image, i) => {
           return(
-            <div className='slide' key={i}>
+            <div className={`slide ${border ? border : undefined}`} key={i}>
               <img src={image.url} alt="" />
               {image.title ? <p className='textSlide'>{image.title}</p> : null}
             </div>
           )
          })}
         </div>
-        <button className='buttonControl leftButton' onClick={before}> 
+        <button className={arrowsBottom ? undefined : 'buttonControl leftButton' } onClick={before}> 
           <img src={leftArrow} alt="" className='arrow box-icon'/>
-          {/* <box-icon name='left-arrow-alt' className= "arrow"></box-icon>  */}
         </button>
-        <button className='buttonControl rightControl' onClick={next}>
+        <button className={arrowsBottom ? undefined : 'buttonControl rightControl'} onClick={next}>
           <img src={rightArrow} alt="" className='arrow box-icon'/>
-          {/* <box-icon name='right-arrow-alt' className= "arrow"></box-icon> */}
         </button>
       </div>
     </>

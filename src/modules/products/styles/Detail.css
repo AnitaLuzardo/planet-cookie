@@ -5,26 +5,26 @@
   text-align: center;
 }
 
-.containerDetail {
-  /* display: flex; */
+/* .containerDetail {
+  display: flex;
   overflow: hidden;
   width: 50%;
   margin: 25px;
-}
-
+} */
+/* 
 .slideshow {
   display: flex;
-}
+} */
 
-.slideProduct {
+/* .slideProduct {
   min-width: 100%; 
   overflow: hidden;
   transition: 0.3s ease all;
-}
+} */
 
-.img_productDetail {
+/* .img_productDetail {
   width: 100%;
-}
+} */
 
 .control_slideProduct {
   padding-inline: 20px;
@@ -34,4 +34,8 @@
 .leftRightButton {
   width: 30px;
   cursor: pointer;
+}
+
+.contentSlideDt {
+  margin: 25px;
 }

@@ -42,6 +42,10 @@
   flex-wrap: nowrap;
 }
 
+.contenedorSLideShowDt {
+  border-radius:  10px;
+}
+
 .slide {
   min-width: 100%;
   overflow: hidden;
@@ -75,10 +79,14 @@
   .slide {
     max-height: 490px;
   }
+
+  .small {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 940px) {
-  .contenedorPrincipal {
+  .contenedorPrincipalHome {
     padding-top: 65px;
   }
 

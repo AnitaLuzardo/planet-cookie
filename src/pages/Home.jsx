@@ -6,7 +6,10 @@ function Home() {
 
   return (
     <> 
-      <SlideShow images={imgHome} />
+      <SlideShow 
+      images={imgHome} 
+      paddingHome = 'contenedorPrincipalHome'
+      />
     </>
   )
 }
