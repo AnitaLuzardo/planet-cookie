@@ -3,7 +3,7 @@ import '../stylesheets/SlideShow.css';
 import leftArrow from '../images/left-arrow-alt.png';
 import rightArrow from '../images/right-arrow-alt.png';
 import { useRef } from 'react';
-// import {useEffect} from 'react'
+import {useEffect} from 'react'
 
 
 const SlideShow = ({
@@ -11,6 +11,7 @@ const SlideShow = ({
   width,
   small,
   paddingHome,
+  transition,
   border,
   extraClasses,
   arrowsBottom
@@ -67,14 +68,16 @@ const SlideShow = ({
     }
   }
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     next();
-  //   }, 3000);
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   }
-  // }, [])
+  useEffect(() => {
+    if (transition) {
+      const intervalId = setInterval(() => {
+        next();
+      }, 3000);
+      return () => {
+        clearInterval(intervalId);
+      }
+    }
+  }, [transition])
 
   return (
     <>

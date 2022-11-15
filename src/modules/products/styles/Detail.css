@@ -1,30 +1,37 @@
 .titleDetail {
   padding-top: 80px;
-  font-size: 30px;
   font-weight: 300;
   text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
 }
 
-/* .containerDetail {
-  display: flex;
-  overflow: hidden;
-  width: 50%;
-  margin: 25px;
-} */
-/* 
-.slideshow {
-  display: flex;
-} */
+.titleProductDl {
+  font-size: 40px;
+  font-weight: 200;
+}
 
-/* .slideProduct {
-  min-width: 100%; 
-  overflow: hidden;
-  transition: 0.3s ease all;
-} */
+.precio {
+  font-size: 18px;
+  font-weight: 400;
+}
 
-/* .img_productDetail {
-  width: 100%;
-} */
+.contentDescription {
+  margin-top: 35px;
+}
+
+.contentDescription {
+  text-align: left;
+  margin: 20px;
+}
+
+.contentDescription > h3{
+  font-size: 20px;
+  font-weight: 400;
+}
 
 .control_slideProduct {
   padding-inline: 20px;
@@ -38,4 +45,18 @@
 
 .contentSlideDt {
   margin: 25px;
+}
+
+@media screen and (min-width: 941px) {
+  .contentSlideDt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .containerContent {
+    padding-top: 30px;
+  }
 }

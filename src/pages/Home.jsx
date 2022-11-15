@@ -7,8 +7,9 @@ function Home() {
   return (
     <> 
       <SlideShow 
-      images={imgHome} 
-      paddingHome = 'contenedorPrincipalHome'
+        images={imgHome} 
+        paddingHome = 'contenedorPrincipalHome'
+        transition = {true}
       />
     </>
   )
