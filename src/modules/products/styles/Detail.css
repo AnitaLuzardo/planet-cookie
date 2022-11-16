@@ -20,12 +20,9 @@
 }
 
 .contentDescription {
-  margin-top: 35px;
-}
-
-.contentDescription {
   text-align: left;
-  margin: 20px;
+  margin: 20px auto;
+  width: 90%;
 }
 
 .contentDescription > h3{

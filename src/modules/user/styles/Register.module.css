@@ -12,6 +12,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: url('../../../images/cookie_fondoII.jpg');
+  background-size: cover;
 }
 
 .input_register {
@@ -37,11 +39,20 @@
 
 .loginRedirect {
   color: crimson;
+  background-color: #f1acacf3;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.errors {
+  color: crimson;
+  text-align: center;
 }
 
 .container_form_registeeer {
   margin-top: 75px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 @media only screen and (min-width: 941px) {

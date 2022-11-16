@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../styles/Catalogo.css"
 
 function Product({image, name, price}) {
   return (
-    <div className='containerProduct'>
+    <Link to="/detail" className='containerProduct'>
       <img src={image} alt="" className='img_product'/>
       <h3>{name}</h3>
       <p>{price}</p>
-    </div>
+    </Link>
   )
 }
 

@@ -10,10 +10,10 @@ function Catalogo() {
       <h1 className='title_catalogo'>Nuestros Productos</h1>
       <FormFiltros />
       <div className='contentProduct'>
-        {CookiesList.map((products) => {
+        {CookiesList.map((products, i) => {
           return (
             <Products 
-              key={products.key}
+              key={i}
               image={products.image}
               name={products.name}
               price={products.price}
