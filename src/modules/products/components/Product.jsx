@@ -2,13 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "../styles/Catalogo.css"
 
-function Product({image, name, price}) {
-  return (
-    <Link to="/detail" className='containerProduct'>
-      <img src={image} alt="" className='img_product'/>
-      <h3>{name}</h3>
-      <p>{price}</p>
-    </Link>
+function Product({items}) {
+  // {image, name, price}\
+  return(
+    items.map((item, i)=>{
+      return(
+        <Link to="/detail" className='containerProduct' key={i}>
+          <img src={item.image} alt="" className='img_product'/>
+          <h3>{item.name}</h3>
+          <p>{item.price}</p>
+        </Link>
+      )
+    })
   )
 }
 

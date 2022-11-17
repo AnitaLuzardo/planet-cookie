@@ -1,4 +1,4 @@
-export const CookiesList = [
+export const products = [
   {
     name: "Galletas de Chocolate",
     image: require('./imageCatalogo/cookies_chocochoco.jpg'),
