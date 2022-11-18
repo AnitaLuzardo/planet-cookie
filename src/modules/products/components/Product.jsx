@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import "../styles/Catalogo.css"
 
 function Product({items}) {
-  // {image, name, price}\
+  // {image, name, price}
+
   return(
     items.map((item, i)=>{
       return(
-        <Link to="/detail" className='containerProduct' key={i}>
+        <Link to={"/detail/" + item.id} className='containerProduct' key={i}>
           <img src={item.image} alt="" className='img_product'/>
           <h3>{item.name}</h3>
           <p>{item.price}</p>
