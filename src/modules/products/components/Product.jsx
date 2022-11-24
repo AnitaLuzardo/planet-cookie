@@ -8,7 +8,7 @@ function Product({items}) {
   return(
     items.map((item, i)=>{
       return(
-        <Link to={"/detail/" + item.id} className='containerProduct' key={i}>
+        <Link to={`/detail/${item.id}`} className='containerProduct' key={i}>
           <img src={item.image} alt="" className='img_product'/>
           <h3>{item.name}</h3>
           <p>{item.price}</p>

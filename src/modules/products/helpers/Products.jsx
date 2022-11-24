@@ -4,7 +4,7 @@ export const products = [
     name: "Galletas de Chocolate",
     image: require('./imageCatalogo/cookies_chocochoco.jpg'),
     price: "$ 345.00",
-    description:"!!!!!!"
+    description:"'Galletas integrales elaboradas con avena y chocolate  NO CONTIENE GLUTEN azúcar integral mascabo pasta de cacao manteca de cacao aceite de girasol alto oleico almendras maní almidón de maiz'"
   },
   {
     id:2,
@@ -25,7 +25,7 @@ export const products = [
     name: "Galletas de Naranja",
     image: require('./imageCatalogo/cookies_naranja.jpg'),
     price: "$ 355.00",
-    description:"psodjfsjdhosdjfnlsdf"
+    description:"Galletas integrales elaboradas con avena y chocolate  NO CONTIENE GLUTEN azúcar integral mascabo, pasta de cacao, manteca de cacao, aceite de girasol alto oleico, almendras, maní, almidón de maiz"
   },
   {
     id:5,

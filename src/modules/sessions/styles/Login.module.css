@@ -21,7 +21,7 @@
 }
 
 .container_login_form {
-  background: url('../../../images/cookie_fondoII.jpg');
+  /* background: url('../../../images/cookie_fondoII.jpg'); */
   background-size: cover;
   display: flex;
   justify-content: center;

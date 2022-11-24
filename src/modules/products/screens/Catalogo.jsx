@@ -5,6 +5,7 @@ import { products } from "../helpers/Products";
 import FormFiltros from "../components/form"
 
 function Catalogo() {
+
   return (
     <div>
       <h1 className='title_catalogo'>Nuestros Productos</h1>

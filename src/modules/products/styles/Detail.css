@@ -9,6 +9,15 @@
   height: 100%;
 }
 
+.errorDetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 40px;
+  font-weight: 300;
+}
+
 .titleProductDl {
   font-size: 40px;
   font-weight: 200;
