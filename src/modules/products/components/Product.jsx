@@ -10,7 +10,7 @@ function Product({items}) {
       return(
         <Link to={`/detail/${item.id}`} className='containerProduct' key={i}>
           <img src={item.image} alt="" className='img_product'/>
-          <h3>{item.name}</h3>
+          <h3 className='titleProduct_catalogo'>{item.name}</h3>
           <p>{item.price}</p>
         </Link>
       )

@@ -25,7 +25,7 @@ function DetalleProduct() {
   // console.log("Contiene", id);
 
   useEffect(()=> {
-    const detailProd = products.find(product => {
+    let detailProd = products.find(product => {
       // eslint-disable-next-line eqeqeq
       return product.id == id
     })

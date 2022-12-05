@@ -4,11 +4,12 @@ import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Catalogo from "./modules/products/screens/Catalogo";
-import Nosotros from "./pages/Nosotros"
+import Nosotros from "./pages/Nosotros";
 import Contactanos from "./pages/Contactanos";
 import Login from "./modules/sessions/screens/Login";
 import Register from "./modules/user/screens/Register";
-import Detail from "./modules/products/screens/DetalleProduct"
+import Detail from "./modules/products/screens/DetalleProduct";
+import NotFound from "./pages/NotFound";
 import {
   BrowserRouter as Router,
   Routes,
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/contactanos" element={<Contactanos />}/>
           <Route exact path="/login" element= {<Login />} />
           <Route exact path="/register" element= {<Register />} />
+          <Route exact path="*" element= {<NotFound/>} />
         </Routes>
         <Footer />
       </Router>
