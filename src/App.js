@@ -9,6 +9,8 @@ import Contactanos from "./pages/Contactanos";
 import Login from "./modules/sessions/screens/Login";
 import Register from "./modules/user/screens/Register";
 import Detail from "./modules/products/screens/DetalleProduct";
+import BackOfficeAllProducts from "./modules/backOffice/screens/BackOfficeAllProducts";
+import BackOfficeScreen from "./modules/backOffice/screens/BackOfficeScreen";
 import NotFound from "./pages/NotFound";
 import {
   BrowserRouter as Router,
@@ -28,6 +30,8 @@ function App() {
           <Route exact path="/contactanos" element={<Contactanos />}/>
           <Route exact path="/login" element= {<Login />} />
           <Route exact path="/register" element= {<Register />} />
+          <Route exact path="/backoffice" element= {<BackOfficeScreen />} />
+          <Route exact path="/backoffice/products" element= {<BackOfficeAllProducts />}/>
           <Route exact path="*" element= {<NotFound/>} />
         </Routes>
         <Footer />

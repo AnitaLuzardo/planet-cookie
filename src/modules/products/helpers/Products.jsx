@@ -11,7 +11,7 @@ export const products = [
     name: "Galletas de Avena",
     image: require('./imageCatalogo/cookies_avena.jpg'),
     price: "$ 335.00",
-    description: "pruebaaaaa"
+    description: "Porque es un alimento 100% integral, que incorpora y utiliza sólo ingredientes naturales para obtener el más rico y saludable producto final."
   },
   {
     id:3,
@@ -31,7 +31,7 @@ export const products = [
     id:5,
     name: "Galletas de uvas Pasas",
     image: require('./imageCatalogo/cookies_uvasPasas.jpg'),
-    price: "$ 345.00",
+    price: "$ 365.00",
     description:"Pruebaaaaa!!!!!!!"
   },
   {
@@ -46,20 +46,20 @@ export const products = [
     name: "Galletas de Chocolate y Naranja",
     image: require('./imageCatalogo/cookies_chocoNaranja.jpg'),
     price: "$ 365.00",
-    description:";lsjd;lsdf;skjd;f"
+    description:"Porque es un alimento 100% integral, que incorpora y utiliza sólo ingredientes naturales para obtener el más rico y saludable producto final."
   },
   {
     id:8,
     name: "Galletas de Chocolate y Almendras",
     image: require('./imageCatalogo/cookies_chocoNaranja.jpg'),
     price: "$ 345.00",
-    description:"ESPERO QUE FUNCIONE"
+    description:"Porque es un alimento 100% integral, que incorpora y utiliza sólo ingredientes naturales para obtener el más rico y saludable producto final."
   },
   {
     id:9,
     name: "Galletas de Naranja y Avena",
     image: require('./imageCatalogo/cookies_naranja.jpg'),
     price: "$ 355.00",
-    description:"SLKJS;LDJFPS;DFJKS;DF"
+    description:"Porque es un alimento 100% integral, que incorpora y utiliza sólo ingredientes naturales para obtener el más rico y saludable producto final."
   },
 ]
