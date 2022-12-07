@@ -53,7 +53,6 @@ function DetalleProduct() {
           arrowsBottom
         />
         <div className="contentInfProduct">
-         
           <DetailProduct product={data} />
         </div>
       </div>

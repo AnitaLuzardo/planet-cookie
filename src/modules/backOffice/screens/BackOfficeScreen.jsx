@@ -1,9 +1,10 @@
 import React from 'react';
-import BackOfficeMenu from '../components/BackOfficeMenu';
+import BackOfficeMenu from '../components/BackOfficeMenu'; 
+import ItemMenu from '../components/helpers/menuBackOffice'
 
 function BackOfficeScreen() {
   return (
-    <BackOfficeMenu />
+    <BackOfficeMenu items= {ItemMenu} />
   )
 }
 

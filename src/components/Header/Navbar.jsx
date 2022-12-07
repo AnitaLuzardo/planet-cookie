@@ -5,7 +5,6 @@ import Button from '../Button';
 import Cookie from '../../images/cookies.png';
 import CookieMenu from '../../images/cookie-solid-menu.png'
 
-// ../images/cookies.png
 function Navbar() {
   let enlace = [
     {name: "Inicio", link:"/"},
