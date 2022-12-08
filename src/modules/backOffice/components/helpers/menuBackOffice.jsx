@@ -2,12 +2,12 @@ const enlaceBackOffice = [
   {
     name: "Users",
     url: require('../helpers/imageMenu/user.png'),
-    link: ""
+    link: "/backoffice/users"
   },
   {
     name: "Products",
     url: require('../helpers/imageMenu/cookie.png'),
-    link: ""
+    link: "/backoffice/products"
   },
   {
     name: "Editar y Crear producto",

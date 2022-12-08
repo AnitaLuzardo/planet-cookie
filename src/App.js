@@ -10,6 +10,7 @@ import Login from "./modules/sessions/screens/Login";
 import Register from "./modules/user/screens/Register";
 import Detail from "./modules/products/screens/DetalleProduct";
 import BackOfficeAllProducts from "./modules/backOffice/screens/BackOfficeAllProducts";
+import BackOfficeUsersList from "./modules/backOffice/screens/BackOfficeUsersList";
 import BackOfficeScreen from "./modules/backOffice/screens/BackOfficeScreen";
 import NotFound from "./pages/NotFound";
 import {
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/register" element= {<Register />} />
           <Route exact path="/backoffice" element= {<BackOfficeScreen />} />
           <Route exact path="/backoffice/products" element= {<BackOfficeAllProducts />}/>
+          <Route exact path="/backoffice/users" element= {< BackOfficeUsersList />} />
           <Route exact path="*" element= {<NotFound/>} />
         </Routes>
         <Footer />
