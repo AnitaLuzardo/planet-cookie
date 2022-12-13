@@ -13,11 +13,14 @@ import BackOfficeAllProducts from "./modules/backOffice/screens/BackOfficeAllPro
 import BackOfficeUsersList from "./modules/backOffice/screens/BackOfficeUsersList";
 import BackOfficeScreen from "./modules/backOffice/screens/BackOfficeScreen";
 import NotFound from "./pages/NotFound";
+import BackOfficeCreateEdit from "./modules/backOffice/screens/BackOfficeCreateEdit";
+import BackOfficeDeleteProduct from "./modules/backOffice/screens/BackOfficeDeleteProduct";
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+
 
 function App() {
   return (
@@ -33,7 +36,9 @@ function App() {
           <Route exact path="/register" element= {<Register />} />
           <Route exact path="/backoffice" element= {<BackOfficeScreen />} />
           <Route exact path="/backoffice/products" element= {<BackOfficeAllProducts />}/>
-          <Route exact path="/backoffice/users" element= {< BackOfficeUsersList />} />
+          <Route exact path="/backoffice/create&edit" element= {<BackOfficeCreateEdit />} />
+          <Route exact path="/backoffice/users" element= {< BackOfficeUsersList/>} />
+          <Route exact path="/backoffice/deleteproduct" element= {<BackOfficeDeleteProduct />} />
           <Route exact path="*" element= {<NotFound/>} />
         </Routes>
         <Footer />

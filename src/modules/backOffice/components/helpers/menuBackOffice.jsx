@@ -12,12 +12,12 @@ const enlaceBackOffice = [
   {
     name: "Editar y Crear producto",
     url: require('../helpers/imageMenu/edit.png'),
-    link: ""
+    link: "/backoffice/create&edit"
   },
   {
     name: "Eliminar Producto",
     url: require('../helpers/imageMenu/delete.png'),
-    link: ""
+    link: "/backoffice/deleteproduct"
   }
 ]
 
