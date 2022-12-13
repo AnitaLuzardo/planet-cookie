@@ -9,12 +9,12 @@ import Contactanos from "./pages/Contactanos";
 import Login from "./modules/sessions/screens/Login";
 import Register from "./modules/user/screens/Register";
 import Detail from "./modules/products/screens/DetalleProduct";
-import BackOfficeAllProducts from "./modules/backOffice/screens/BackOfficeAllProducts";
-import BackOfficeUsersList from "./modules/backOffice/screens/BackOfficeUsersList";
-import BackOfficeScreen from "./modules/backOffice/screens/BackOfficeScreen";
+import BackOfficeAllProducts from "./modules/backOffice/products/screens/BackOfficeAllProducts";
+import BackOfficeUsersList from "./modules/backOffice/user/screens/BackOfficeUsersList";
+import BackOfficeScreen from "./pages/BackOfficeScreen";
 import NotFound from "./pages/NotFound";
-import BackOfficeCreateEdit from "./modules/backOffice/screens/BackOfficeCreateEdit";
-import BackOfficeDeleteProduct from "./modules/backOffice/screens/BackOfficeDeleteProduct";
+import BackOfficeCreateEdit from "./modules/backOffice/products/screens/BackOfficeCreateEdit";
+import BackOfficeDeleteProduct from "./modules/backOffice/products/screens/BackOfficeDeleteProduct";
 import {
   BrowserRouter as Router,
   Routes,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MenuBO from '../styles/backOfficeMenu.module.css';
+import MenuBO from '../../../stylesheets/backOfficeMenu.module.css';
 
 function BackOfficeMenu({items}) {
   return (

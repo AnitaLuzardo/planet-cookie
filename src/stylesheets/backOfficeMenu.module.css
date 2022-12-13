@@ -4,7 +4,7 @@
   /* justify-content: center;
   align-items: center; */
   height: 100%;
-  background: url(../components/helpers/imageMenu/backofficeMenu.jpg);
+  background: url(../modules/backOffice/BackOfficeMenu/helpers/imageMenu/backofficeMenu.jpg);
   background-size: cover;
 }
 
