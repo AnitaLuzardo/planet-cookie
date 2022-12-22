@@ -3,6 +3,7 @@ import "../stylesheets/Contactanos.css"
 import FormText from "../components/contactForm/form"
 
 function Contactanos() {
+
   return (
     <div className='container_contact'>
       <div className='content_inf'>

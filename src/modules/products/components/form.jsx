@@ -18,7 +18,7 @@ function form() {
           </div>
         </div>
         <button className="bg-indigo-600 text-white py-1 px-4 rounded  
-         hover:bg-indigo-400 duration-500 ">
+         hover:bg-indigo-800 duration-500 ">
           Filtrar
         </button>
       </form>
