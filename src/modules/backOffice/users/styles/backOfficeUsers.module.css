@@ -1,17 +1,15 @@
 .container {
-  /* width: 82%; */
   margin: auto;
+  /* height: 100%; */
+  padding-top: 10px;
+  padding-bottom: 20px
 }
 
 .title {
-  padding-bottom: 20px;
+  padding-top: 80px;
   text-align: center;
   font-size: 40px;
   font-weight: 200;
-}
-
-thead > tr {
- border-radius: 5px;
 }
 
 thead > tr > th {
@@ -21,6 +19,7 @@ thead > tr > th {
   font-weight: 400;
   border-bottom: 1px solid rgb(151, 147, 147);
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
 }
 
 tbody > tr > td {
@@ -30,15 +29,25 @@ tbody > tr > td {
   font-weight: 400;
   /* border-bottom: 1px solid rgb(151, 147, 147); */
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+tbody > tr:hover {
+  background-color: #ff6b6b81;
 }
 
 .buttonAction {
   margin: 10px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .img {
   width: 30px;
+}
+
+.imgDelete {
+  margin-left: 14px;
 }
 
 .actions {
@@ -66,12 +75,13 @@ tbody > tr > td {
     padding-bottom: 5px;
   }
 
-  /* .actions {
-    padding-bottom: 5px;
-  } */
-
   .contentTable{
     display: flex;
     overflow-x: scroll;
+  }
+
+  .contentTable::-webkit-scrollbar-thumb {
+    background-color: #ff6b6b81;
+    
   }
 }

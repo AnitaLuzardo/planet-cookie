@@ -35,7 +35,7 @@ function Navbar() {
           left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-in ${open ? 'top-20': 'top-[-300px]'}`}>
           {
             enlace.map((link)=>(
-              <li key={link.name} className='md:ml-6 text-ms md:my-0 my-7'>
+              <li key={link.name} className='md:ml-6 text-sm md:my-0 my-7'>
                 <Link to={link.link}>{link.name}</Link>
               </li>
             ))

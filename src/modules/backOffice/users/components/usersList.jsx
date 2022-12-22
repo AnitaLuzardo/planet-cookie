@@ -2,8 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserList } from '../actions';
 import { useEffect } from 'react';
-import edit from '../../BackOfficeMenu/helpers/imageMenu/edit.png';
-import delet from '../../BackOfficeMenu/helpers/imageMenu/delete.png'
+import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
+import delet from '../../BackOfficeMenu/helpers/imageMenu/deleteII.png'
 import Style from '../styles/backOfficeUsers.module.css';
 
 const usersList = () => {
@@ -49,7 +49,7 @@ const usersList = () => {
                         <img src={edit} alt="" className={Style.img}/>Edit
                       </button>
                       <button className= {Style.buttonAction}>
-                        <img src={delet} alt="" className={Style.img}/> Delete
+                        <img src={delet} alt="" className={`${Style.img} ${Style.imgDelete}`}/> Delete
                       </button>
                     </td>
                   </tr>

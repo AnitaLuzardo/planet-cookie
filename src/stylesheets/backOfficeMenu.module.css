@@ -1,23 +1,22 @@
 .container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   height: 100%;
   background: url(../modules/backOffice/BackOfficeMenu/helpers/imageMenu/backofficeMenu.jpg);
   background-size: cover;
+  padding-bottom: 15px;
 }
 
 .title {
   margin-top: 100px;
-  /* font-size: 45px; */
+  margin-bottom: 15px;
   text-align: center;
   font-weight: 200;
   background: #ff6b6b41;
 }
 
 .img {
-  width: 75px;
+  width: 60px;
 }
 
 .containerItem {
@@ -28,7 +27,7 @@
   height: 60%;
   width: 300px;
   margin: auto;
-  background: #ff6b6b41;
+  background: #746f6f41;
   border-radius: 15px;
 }
 
