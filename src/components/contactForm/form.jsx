@@ -1,10 +1,18 @@
 import React from 'react'
 import emailjs from '@emailjs/browser';
+// import { useState } from 'react';
 
 const form = () => {
+  // const initialData = {
+  //   name: '',
+  //   email: '',
+  //   texto: ''
+  // };
 
   const sendEmail = (event) => {
     event.preventDefault();
+
+    console.log('enviando formulario')
 
     emailjs.sendForm('service_uq5wzh8', 'template_rpghgif', event.target, 'OkvLQcE4Ih-vVw5yq')
     .then(response => console.log('Respuesta', response))
@@ -17,7 +25,11 @@ const form = () => {
         name="name"
         placeholder="Nombre"
         className="contact_input"
+        onBlur={(e) => console.log(e.target.value)}
       />
+      {/* <div>
+        <p className=''>Debe colocar su Nombre!</p>
+      </div> */}
       <input type="email" 
         name="email"
         placeholder="Email"
