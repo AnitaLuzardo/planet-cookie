@@ -20,6 +20,15 @@
   margin-top: -50px;
 }
 
+.errorsLogin {
+  font-size: 12px;
+  color: #ff1919;
+}
+
+.pwdStyle{
+  margin-bottom: 20px;
+}
+
 .container_login_form {
   /* background: url('../../../images/cookie_fondoII.jpg'); */
   background-size: cover;
@@ -44,7 +53,7 @@
 }
 
 .regist_redirect {
-  color: crimson;
+  color: #ff1919;
   margin-left: 10px;
   background-color: #f1acacf3;
   padding: 5px;
@@ -52,7 +61,8 @@
 }
 
 .errors {
-  color: crimson;
+  color: #ff1919;
+  font-size: 12px;
   text-align: center;
   margin: 5px;
 }

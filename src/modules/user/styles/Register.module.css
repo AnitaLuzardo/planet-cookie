@@ -16,6 +16,16 @@
   background-size: cover;
 }
 
+.errorsRegister {
+  color: #ff1919;
+  font-size: 12px;
+  text-align: center;
+}
+
+.confpwd{
+  margin-bottom: 10px;
+}
+
 .input_register {
   border: 1px solid grey;
   border-radius: 25px;
