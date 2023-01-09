@@ -9,7 +9,7 @@ import {useEffect} from 'react'
 const SlideShow = ({
   images,
   width,
-  small,
+  // small,
   paddingHome,
   transition,
   border,

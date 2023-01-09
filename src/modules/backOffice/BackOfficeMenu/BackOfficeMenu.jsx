@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../../../stylesheets/Navbar.css"
 import MenuBO from '../../../stylesheets/backOfficeMenu.module.css';
 
 function BackOfficeMenu({items}) {
@@ -19,6 +20,7 @@ function BackOfficeMenu({items}) {
         }
       </div>
     </div>
+    
   )
 }
 

@@ -19,6 +19,8 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px
 }
 
 .img_product {
@@ -28,7 +30,9 @@
 
 .containerProduct {
   padding: 14px;
-  margin: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px -4px rgb(122 118 122);
+  border-radius: 10px;
 }
 
 .formContainerProduct {

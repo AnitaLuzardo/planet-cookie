@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserList } from '../actions';
 import { useEffect } from 'react';
-import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
+// import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
 import delet from '../../BackOfficeMenu/helpers/imageMenu/deleteII.png'
 import Style from '../styles/backOfficeUsers.module.css';
 
@@ -40,14 +40,14 @@ const usersList = () => {
               {
                 users.map((user, i)=>(
                   <tr key={i}>
-                    <td>{user.nombre}</td>
-                    <td>{user.apellido}</td>
-                    <td>{user.telefono}</td>
+                    <td>{user.name}</td>
+                    <td>{user.lastName}</td>
+                    <td>{user.phone}</td>
                     <td>{user.email}</td>
                     <td className={Style.actions}>
-                      <button className= {Style.buttonAction}>
+                      {/* <button className= {Style.buttonAction}>
                         <img src={edit} alt="" className={Style.img}/>Edit
-                      </button>
+                      </button> */}
                       <button className= {Style.buttonAction}>
                         <img src={delet} alt="" className={`${Style.img} ${Style.imgDelete}`}/> Delete
                       </button>

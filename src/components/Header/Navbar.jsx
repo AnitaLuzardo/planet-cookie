@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div className="w-full fixed top-0 left-0 z-[100]">
-      <div className="md:flex items-center justify-between bg-red-100 py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-red-100 py-4 md:px-10 px-7 boxShadow">
         <div className='font-bold500 text-2xl cursor-pointer  flex items-center 
         text-gray-800'>
           <Link to='/' className="logo-planet">
