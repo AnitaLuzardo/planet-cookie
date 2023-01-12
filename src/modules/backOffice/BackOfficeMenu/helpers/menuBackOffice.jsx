@@ -1,22 +1,22 @@
 const enlaceBackOffice = [
   {
     name: "Users",
-    url: require('../helpers/imageMenu/user.png'),
+    url: require('../helpers/imageMenu/usersII.png'),
     link: "/backoffice/users"
   },
   {
     name: "Products",
-    url: require('../helpers/imageMenu/cookie.png'),
+    url: require('../../../../images/cookies.png'),
     link: "/backoffice/products"
   },
   {
     name: "Editar y Crear producto",
-    url: require('../helpers/imageMenu/edit.png'),
+    url: require('../helpers/imageMenu/editProduct.png'),
     link: "/backoffice/create&edit"
   },
   {
     name: "Eliminar Producto",
-    url: require('../helpers/imageMenu/delete.png'),
+    url: require('../helpers/imageMenu/deleteII.png'),
     link: "/backoffice/deleteproduct"
   }
 ]

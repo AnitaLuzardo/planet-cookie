@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserList } from '../actions';
 import { useEffect } from 'react';
 // import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
-import delet from '../../BackOfficeMenu/helpers/imageMenu/deleteII.png'
+import delet from '../../BackOfficeMenu/helpers/imageMenu/deleteUser.png'
 import Style from '../styles/backOfficeUsers.module.css';
 
 const usersList = () => {

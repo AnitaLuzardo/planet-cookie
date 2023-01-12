@@ -4,6 +4,8 @@ import BackOfficeAllProducts from './modules/backOffice/products/screens/BackOff
 import BackOfficeCreateEdit from './modules/backOffice/products/screens/BackOfficeCreateEdit';
 import BackOfficeUsersList from './modules/backOffice/users/screens/BackOfficeUsersList';
 import BackOfficeDeleteProduct from './modules/backOffice/products/screens/BackOfficeDeleteProduct';
+import BackofficeHome from './modules/backOffice/BackOfficeHome/components/backofficeHome';
+import NotFound from './pages/NotFound';
 import {
   Routes,
   Route
@@ -11,13 +13,17 @@ import {
 
 function backOffice() {
   return (
-    <Routes>  
-      <Route exact path="/backoffice" element= {<BackOfficeScreen />} />
-      <Route exact path="/backoffice/products" element= {<BackOfficeAllProducts />}/>
-      <Route exact path="/backoffice/create&edit" element= {<BackOfficeCreateEdit />} />
-      <Route exact path="/backoffice/users" element= {< BackOfficeUsersList/>} />
-      <Route exact path="/backoffice/deleteproduct" element= {<BackOfficeDeleteProduct />} /> 
-    </Routes> 
+    <>
+      <BackOfficeScreen />
+      <Routes>  
+        <Route exact path="/backoffice" element= {<BackofficeHome/>}/>
+        <Route exact path="/backoffice/products" element= {<BackOfficeAllProducts />}/>
+        <Route exact path="/backoffice/create&edit" element= {<BackOfficeCreateEdit />} />
+        <Route exact path="/backoffice/users" element= {< BackOfficeUsersList/>} />
+        <Route exact path="/backoffice/deleteproduct" element= {<BackOfficeDeleteProduct />} />
+        <Route exact path="*" element= {<NotFound />} /> 
+      </Routes> 
+    </>
   )
 }
 

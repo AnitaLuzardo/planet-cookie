@@ -2,11 +2,10 @@
   margin: auto;
   /* height: 100%; */
   padding-top: 10px;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .title {
-  padding-top: 80px;
   text-align: center;
   font-size: 40px;
   font-weight: 200;
@@ -43,7 +42,7 @@ tbody > tr:hover {
 }
 
 .img {
-  width: 30px;
+  width: 35px;
 }
 
 .imgDelete {
@@ -62,6 +61,12 @@ tbody > tr:hover {
     flex-direction: column;
   }
 } */
+
+@media only screen and (min-width: 940px) {
+  .container {
+    padding-left: 20px;
+  }
+}
 
 @media only screen and (max-width: 940px) {
   .container {

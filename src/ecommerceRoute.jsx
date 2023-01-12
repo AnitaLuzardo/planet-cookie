@@ -12,6 +12,7 @@ import Contactanos from './pages/Contactanos';
 import Login from './modules/sessions/screens/Login';
 import Register from './modules/user/screens/Register';
 import Footer from './components/Footer/Footer';
+import NotFound from './pages/NotFound'
 
 function ecommerceRoute() {
   return (
@@ -25,6 +26,7 @@ function ecommerceRoute() {
         <Route exact path="/contactanos" element={<Contactanos />}/>
         <Route exact path="/login" element= {<Login />} />
         <Route exact path="/register" element= {<Register />} />
+        <Route exact path="*" element= {<NotFound />} />
       </Routes>
       <Footer />
     </>  
