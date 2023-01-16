@@ -12,7 +12,7 @@ const usersList = () => {
  
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const users = useSelector(state => state.getAllUsers.users)
-  // console.log('Lista de usuarios', users)
+  // console.log('Lista de usuarios', users.length)
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(()=> {

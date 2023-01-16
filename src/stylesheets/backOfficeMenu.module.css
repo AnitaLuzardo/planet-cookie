@@ -1,17 +1,32 @@
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* flex-direction: column; */
   background-size: cover;
   /* padding-bottom: 15px; */
 }
 
+.headerbOf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #f88282; 
+  padding: 5px;
+  position: fixed;
+  z-index: 2;
+}
+
 .logo {
-  width: 65px;
+  width: 40px;
+}
+
+.imgMenu {
+  width: 35px;
 }
 
 .dashboard {
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -23,21 +38,24 @@
 }
 
 .dashboardCont > img {
-  width: 55px;
+  width: 45px;
 }
 
 .title {
   /* margin-bottom: 15px; */
   text-align: center;
   font-weight: 200;
-  background: #ff6b6b41;
-  font-family: 'Amatic SC', cursive;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .img {
-  width: 60px;
+  width: 45px;
 }
 
 .containerItem {
@@ -60,6 +78,7 @@
 .titleItem {
   width: 100px;
   text-align: center;
+  font-weight: 300;
 }
 
 .menuOffice {
@@ -72,12 +91,12 @@
 
 @media screen and (min-width: 940px) {
   .title {
-    font-size: 45px;
-  }
-}
-
-@media screen and (max-width: 939px) {
-  .title {
     font-size: 35px;
   }
 }
+
+/* @media screen and (max-width: 939px) {
+  .title {
+    font-size: 35px;
+  }
+} */
