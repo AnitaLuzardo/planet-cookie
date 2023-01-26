@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 function Register() {
   const dispatch = useDispatch();
   const rols = useSelector(state => state.users.rols);
-  // console.log('ROLES', rols);
+  console.log('ROLES', rols);
 
   const errors = useSelector(state => state.users.errors);
 

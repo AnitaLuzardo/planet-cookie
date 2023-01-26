@@ -1,23 +1,20 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserList } from '../actions';
 import { useEffect } from 'react';
-// import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
+import edit from '../../BackOfficeMenu/helpers/imageMenu/editII.png';
 import delet from '../../BackOfficeMenu/helpers/imageMenu/deleteUser.png'
 import Style from '../styles/backOfficeUsers.module.css';
 
 const usersList = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const dispatch = useDispatch();
- 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const users = useSelector(state => state.getAllUsers.users)
   // console.log('Lista de usuarios', users.length)
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(()=> {
     fetchUserList(dispatch)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
@@ -45,11 +42,11 @@ const usersList = () => {
                     <td>{user.phone}</td>
                     <td>{user.email}</td>
                     <td className={Style.actions}>
-                      {/* <button className= {Style.buttonAction}>
-                        <img src={edit} alt="" className={Style.img}/>Edit
-                      </button> */}
                       <button className= {Style.buttonAction}>
-                        <img src={delet} alt="" className={`${Style.img} ${Style.imgDelete}`}/> Delete
+                        <img src={edit} alt="" className={Style.img}/>
+                      </button>
+                      <button className= {Style.buttonAction}>
+                        <img src={delet} alt="" className={`${Style.img} ${Style.imgDelete}`}/>
                       </button>
                     </td>
                   </tr>

@@ -1,7 +1,7 @@
 .container {
   margin: auto;
   /* height: 100%; */
-  padding-top: 10px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -55,16 +55,13 @@ tbody > tr:hover {
   align-items: center;
 }
 
-/* @media only screen and (min-width: 941px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-} */
-
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 941px) {
   .container {
     padding-left: 20px;
+  }
+
+  .title {
+    padding-top: 30px;
   }
 }
 
