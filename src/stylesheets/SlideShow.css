@@ -50,7 +50,7 @@
   min-width: 100%;
   overflow: hidden;
   transition: .5s ease all;
-  /* max-height: 490px; */
+  max-height: 490px;
   position: relative;
 }
 

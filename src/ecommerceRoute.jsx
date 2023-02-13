@@ -33,4 +33,4 @@ function ecommerceRoute() {
   )
 }
 
-export default ecommerceRoute
+export default React.memo(ecommerceRoute)

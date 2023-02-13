@@ -27,4 +27,4 @@ function backOffice() {
   )
 }
 
-export default backOffice
+export default React.memo(backOffice)

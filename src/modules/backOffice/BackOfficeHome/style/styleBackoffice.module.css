@@ -6,6 +6,7 @@
   /* height: 60%;
   width: 60%; */
   margin: auto;
+  padding-top: 100px;
 }
 
 .content {
@@ -43,8 +44,9 @@
 
 @media screen and (min-width: 941px) {
   .container {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 75%;
     margin: auto;
+    padding-top: 70px;
   }
 }

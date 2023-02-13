@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     if (location.pathname.includes('/backoffice') && !backoffice) {
       setBackoffice(true)
-      console.log('backoffice', backoffice)
+      // console.log('backoffice', backoffice)
     } else if (!location.pathname.includes('/backoffice') && backoffice) {
       setBackoffice(false)
     }
