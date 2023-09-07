@@ -28,7 +28,6 @@ function Navbar() {
           </Link>
         </div>
         <div onClick={() => setOpen(!open)} className='text-xl absolute right-8 top-6 cursor-pointer md:hidden'>
-        
           <h2 className="menu-resp">Menu <img src={CookieMenu} alt="" /> </h2>
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 pt-0 absolute md:static bg-red-100 md:z-auto z-[-1]

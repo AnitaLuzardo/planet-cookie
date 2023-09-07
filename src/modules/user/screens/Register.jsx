@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 function Register() {
   const dispatch = useDispatch();
   const rols = useSelector(state => state.users.rols);
-  console.log('ROLES', rols);
+  // console.log('ROLES', rols);
 
   const errors = useSelector(state => state.users.errors);
 
@@ -20,10 +20,10 @@ function Register() {
 
   async function register(form) {
     const result = rols.find(({nombre}) => nombre === 'Cliente');
-    // console.log('RESULTADOS', result);
+    console.log('RESULTADOS', result);
 
     form.id_rol = result.id;
-    // console.log('FORMULARIO', form);
+    console.log('FORMULARIO', form);
 
     await fetchRegister(form, dispatch)
   }

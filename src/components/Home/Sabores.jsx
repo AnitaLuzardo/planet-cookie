@@ -5,7 +5,7 @@ import imgSabores from './helpers/imgSabores';
 function Sabores() {
   return (
     <div className={Style.containerContent}> 
-      <h1 className={Style.title}>Nuestros Sabores</h1>
+      <h1 className={Style.title}>Sigue Nuestros Sabores</h1>
       <div className={Style.container}>
         {imgSabores.map((img, i) => {
           return(

@@ -46,15 +46,17 @@ const form = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useForm(initialForm, validationsForm);
 
-  // const sendEmail = (event) => {
-  //   event.preventDefault();
+  // eslint-disable-next-line no-unused-vars
+  const sendEmail = (event) => {
+    event.preventDefault();
 
-  //   console.log('enviando formulario')
+    console.log('enviando formulario')
 
-  //   emailjs.sendForm('service_uq5wzh8', 'template_rpghgif', event.target, 'OkvLQcE4Ih-vVw5yq')
-  //   .then(response => console.log('Respuesta', response))
-  //   .catch(error => console.log('ERROR', error))
-  // }
+    // eslint-disable-next-line no-undef
+    emailjs.sendForm('service_uq5wzh8', 'template_rpghgif', event.target, 'OkvLQcE4Ih-vVw5yq')
+    .then(response => console.log('Respuesta', response))
+    .catch(error => console.log('ERROR', error))
+  }
 
   return (
     <>
