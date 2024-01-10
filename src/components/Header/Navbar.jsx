@@ -14,6 +14,10 @@ function Navbar() {
 
   let [open, setOpen] = useState(false)
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="w-full fixed top-0 left-0 z-[100]">
       <div className="md:flex items-center justify-between bg-red-100 py-4 md:px-10 px-7 boxShadow">
@@ -31,20 +35,20 @@ function Navbar() {
           <h2 className="menu-resp">Menu <img src={CookieMenu} alt="" /> </h2>
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 pt-0 absolute md:static bg-red-100 md:z-auto z-[-1]
-          left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-in ${open ? 'top-20': 'top-[-300px]'}`}>
+          left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20': 'top-[-300px]'}`}>
           {
             enlace.map((link)=>(
-              <li key={link.name} className='md:ml-6 text-sm md:my-0 my-7'>
+              <li key={link.name} className='md:ml-6 text-sm md:my-0 my-7' onClick={handleLinkClick}>
                 <Link to={link.link}>{link.name}</Link>
               </li>
             ))
           }
           <div className='container_button'>
             <Button>
-              <Link to= "/login"> Login </Link>
+              <Link to= "/login" onClick={handleLinkClick}> Login </Link>
             </Button>
             <Button>
-              <Link to= "/register"> Register </Link>
+              <Link to= "/register" onClick={handleLinkClick}> Register </Link>
             </Button>
           </div> 
         </ul>
